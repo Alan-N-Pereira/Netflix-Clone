@@ -4,10 +4,10 @@ import { JumbotronContainer } from './containers/jumbotron';
 
 function App() {
 	return (
-		<span>
+		<div>
 			<JumbotronContainer />
 			<FooterContainer />
-		</span>
+		</div>
 	);
 }
 
