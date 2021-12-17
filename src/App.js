@@ -9,6 +9,9 @@ function App() {
 		<Router>
 			<Routes>
 				<Route path={ROUTES.HOME} element={<Home />} />
+				<Route path={ROUTES.BROWSE} element={<Browse />} />
+				<Route path={ROUTES.SIGN_UP} element={<Signup />} />
+				<Route path={ROUTES.SIGN_IN} element={<Signin />} />
 			</Routes>
 		</Router>
 	);
