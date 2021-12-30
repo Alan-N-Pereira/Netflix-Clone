@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'normalize.css';
 import { GlobalStyles } from './globalStyles';
-// eslint-disable-next-line
 import { firebase } from './lib/firebase.prod';
+import { FirebaseContext } from './context/firebase';
 
 ReactDOM.render(
 	<div>
-		<GlobalStyles />
-		<App />
+		<FirebaseContext.Provider value={{ firebase }}>
+			<GlobalStyles />
+			<App />
+		</FirebaseContext.Provider>
 	</div>,
 	document.getElementById('root')
 );
