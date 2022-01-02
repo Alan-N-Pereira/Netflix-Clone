@@ -16,7 +16,7 @@ Form.Title = function FormTitle({ children, ...restProps }) {
 	return <Title {...restProps}>{children}</Title>;
 };
 
-Form.ErroText = function FormText({ children, ...restProps }) {
+Form.Text = function FormText({ children, ...restProps }) {
 	return <Text {...restProps}>{children}</Text>;
 };
 
