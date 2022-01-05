@@ -4,7 +4,7 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 /*eslint-disable */
 
 export const Background = styled.div`
-	diplay: flex;
+	display: flex;
 	flex-direction: column;
 	background: url(${({ src }) => (src ? '../images/misc/${src}.jpg' : '../images/misc/home-bg.jpg')}) top left / cover
 		no-repeat;
