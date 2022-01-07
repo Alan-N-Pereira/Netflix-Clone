@@ -19,7 +19,7 @@ export default function Signin() {
 	const handleSignIn = (event) => {
 		event.preventDefault();
 
-		const auth = getAuth();
+		const auth = getAuth(firebase);
 		signInWithEmailAndPassword(auth, emailAddress, password)
 			.then(() => {
 				// Push to browse page
