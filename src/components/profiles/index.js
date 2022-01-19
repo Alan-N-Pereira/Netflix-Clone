@@ -13,7 +13,7 @@ Profiles.List = function ProfilesList({ children, ...restProps }) {
 	return <List {...restProps}>{children}</List>;
 };
 
-Profiles.Item = function ProfilesItem({ children, ...restProps }) {
+Profiles.User = function ProfilesUser({ children, ...restProps }) {
 	return <Item {...restProps}>{children}</Item>;
 };
 
