@@ -30,6 +30,8 @@ export default function BrowseContainer({ slides }) {
 				</Header.Frame>
 				<Header.Feature>
 					<Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
+					<Header.TextLink>Series</Header.TextLink>
+					<Header.TextLink>Films</Header.TextLink>
 					<Header.Text>
 						Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets
 						of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the
