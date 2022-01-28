@@ -24,14 +24,16 @@ export default function BrowseContainer({ slides }) {
 	return profile.displayName ? (
 		<div>
 			{loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-			<Header src="joker1">
+			<Header src="joker1" dontShowSmallViewPort>
 				<Header.Frame>
-					<Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+					<Header.Group>
+						<Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+						<Header.TextLink>Series</Header.TextLink>
+						<Header.TextLink>Films</Header.TextLink>
+					</Header.Group>
 				</Header.Frame>
 				<Header.Feature>
 					<Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
-					<Header.TextLink>Series</Header.TextLink>
-					<Header.TextLink>Films</Header.TextLink>
 					<Header.Text>
 						Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets
 						of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the
