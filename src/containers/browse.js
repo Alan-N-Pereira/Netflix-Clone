@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SelectProfileContainer } from './profiles';
-import { getAuth } from 'firebase/auth';
+import { getAuth, signOut } from 'firebase/auth';
 import { Loading, Header } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
@@ -37,6 +37,9 @@ export default function BrowseContainer({ slides }) {
 								<Header.Group>
 									<Header.Picture src={user.photoURL} />
 									<Header.TextLink>{user.displayName}</Header.TextLink>
+								</Header.Group>
+								<Header.Group>
+									<Header.TextLink onClick={() => signOut(auth)}>Sign out</Header.TextLink>
 								</Header.Group>
 							</Header.Dropdown>
 						</Header.Profile>
