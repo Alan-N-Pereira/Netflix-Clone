@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Netflix clone application was built using React (Custom Hooks, Context), Firebase & Styled Components. The Application contains the following pages: sign in, sign up, browse & lastly the homepage. There are four different pages, some using protected routes with auth listeners. Firebase firestore handles all the data and that data is retrieved using a custom hook; authentication is used on all pages, which is handled by Firebase as well.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To run the site on you local machine
 
-### `npm start`
+-   Fork or Clone this repository in your local machine.
+-   Cd into the directory and run `npm install` to download all the required packages.
+-   Then run `npm start` inside the terminal (To start the appllication on browser).
+-   Create a Firebase account and start a new Project (To store all the series and flims data as well as user data).
+-   Copy your Firebase project config form the "project setting" of the project (which contains the api key etc.) and paste it  under the config in "./src/lib/firebase.prod.js" (Now the application is connected to firebase but there is no data in it).
+-   To "Seed" the data into the FireStore Database uncomment the code (Tagged as uncomment to seed) in 'firebase.prod.js' and refresh the app in browser `once` to seed the data in the database.
+-   Refresh only once and comment the code again to avoid multiple instances of same data written into the database.
+    -   If this occurs delete the collection in database and redo the seeding from step 6.
+-   To create a user just `signup` form the app. (This will create a new user). 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Info
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   The Netflix Clone is a React application inspired from the real Netflix site, which uses React with router and custom hooks on Client side and Firebase in the backend.
+-   The project was an effort to recreate the original Netfix site with similar features using React.
+-   The Application contains almost similar design and features of the original Netflix site.
+-   The site is Bootstraped using create-react-app.
+-   Firebase is used in backend to store Data.
+-   The project uses Styled components which allows you to write css in javascript to design the site.
+-   In order to write a new blog post, the user has to register and login.
 
-### `npm test`
+## Potential Improvements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   A better way to seed the data in Firebase.
+-   Better Optimization of certain parts of component.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Some of the technologies used in the development of this web application are as follow:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   [React.js](https://reactjs.org/): A JavaScript library for building user interfaces.
+-   [Firebase](https://firebase.google.com/): The Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and sync data between your users in realtime.
+-   [Styled Components](https://styled-components.com/): A CSS-in-JS styling framework that uses tagged template literals in JavaScript and the power of CSS to provide a platform that allows you to write actual CSS to style React components.
+-   [Fuse.js](https://mongoosejs.com/): a powerful, lightweight fuzzy-search javascript library, with zero dependencies, that provides fuzzy search capabilities for applications and websites.
